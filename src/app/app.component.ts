@@ -1,3 +1,4 @@
+import { defer } from 'rxjs';
 import { Component } from '@angular/core';
 
 @Component({
@@ -12,12 +13,9 @@ export class AppComponent {
   public greeting: string = '';
 
   public onGreetingClick(): void {
-    this.greeting = 'Hello ' + this.greetingTo + '.';
-
-    void window.GreetingsAPI.greeting(this.greetingTo)
-      .then((value: string) => {
+    defer(() => window.GreetingsAPI.greeting(this.greetingTo))
+      .subscribe(value => {
         this.greeting = value;
       });
-
   }
 }
