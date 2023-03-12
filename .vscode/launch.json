@@ -37,7 +37,7 @@
       "outFiles": [
         "${workspaceFolder}/dist/**/*.js"
       ],
-      "timeout": 30000
+      "timeout": 60000
     }
   ],
   "compounds": [
