@@ -12,5 +12,5 @@ contextBridge.exposeInMainWorld('GreetingsAPI', {
    * @param whoIs 挨拶する相手
    * @returns 挨拶。
    */
-  greeting: (whoIs: string) => ipcRenderer.invoke('greeting', whoIs)
+  greeting: (whoIs: string): Promise<string> => ipcRenderer.invoke('greeting', whoIs).then(value => value as string)
 });
