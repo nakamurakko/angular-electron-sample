@@ -41,7 +41,7 @@
         "${workspaceFolder}/**",
         "!**/node_modules/**"
       ],
-      "timeout": 60000
+      "timeout": 600000
     }
   ],
   "compounds": [
