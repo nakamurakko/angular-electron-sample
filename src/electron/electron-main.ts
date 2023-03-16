@@ -10,9 +10,7 @@ async function createWindow(): Promise<void> {
   });
 
   // そしてアプリの index.html を読み込みます。
-  const indexPath: string = path.join(__dirname, 'angular-electron-sample/index.html');
-  await mainWindow.loadFile(indexPath);
-  // await mainWindow.loadURL(indexPath);
+  await mainWindow.loadFile(path.join(__dirname, 'angular-electron-sample/index.html'));
 
   // メニューバーを非表示。
   mainWindow.setMenuBarVisibility(false);
