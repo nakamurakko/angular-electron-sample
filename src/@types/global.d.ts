@@ -2,14 +2,14 @@
 
 declare global {
   interface Window {
-    GreetingsAPI: GreetingsAPI
+    GreetingApi: GreetingApi
   }
 }
 
 /**
- * GreetingsAPI 用インターフェイス。
+ * GreetingApi 用インターフェイス。
  */
-export interface GreetingsAPI {
+export interface GreetingApi {
   /**
    * 挨拶を返す。
    *

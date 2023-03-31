@@ -5,7 +5,7 @@
 
 import { contextBridge, ipcRenderer } from 'electron';
 
-contextBridge.exposeInMainWorld('GreetingsAPI', {
+contextBridge.exposeInMainWorld('GreetingApi', {
   /**
    * 挨拶を返す。
    *

@@ -1,5 +1,6 @@
-import { defer } from 'rxjs';
 import { Component } from '@angular/core';
+
+import { GreetingApiService } from './services/greeting-api.service';
 
 @Component({
   selector: 'app-root',
@@ -12,8 +13,11 @@ export class AppComponent {
   public greetingTo: string = 'Everyone';
   public greeting: string = '';
 
+  public constructor(private greetingApiService: GreetingApiService) {
+  }
+
   public onGreetingClick(): void {
-    defer(() => window.GreetingsAPI.greeting(this.greetingTo))
+    this.greetingApiService.greeting(this.greetingTo)
       .subscribe(value => {
         this.greeting = value;
       });
