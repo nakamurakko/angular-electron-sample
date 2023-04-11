@@ -1,1 +1,1 @@
-npm run build:development:all
+call npm run build:development:all
