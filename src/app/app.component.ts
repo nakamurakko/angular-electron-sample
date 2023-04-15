@@ -17,6 +17,8 @@ export class AppComponent {
   }
 
   public onGreetingClick(): void {
+    this.greeting = '';
+
     this.greetingApiService.greeting(this.greetingTo)
       .subscribe(value => {
         this.greeting = value;
