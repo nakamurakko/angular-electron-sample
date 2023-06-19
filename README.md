@@ -1,6 +1,6 @@
 # angular-electron-sample
 
-Sample of Angular running with Electron
+Sample of Angular running with Electron.
 
 ## デバッグ手準備
 
@@ -20,3 +20,8 @@ Sample of Angular running with Electron
     ```bat
     npm run build-portable
     ```
+
+## Electron - Angular 間のやりとり
+
+`preload.ts` に定義した API を介してやりとりする。[コンテキストの分離](https://www.electronjs.org/ja/docs/latest/tutorial/context-isolation)を参照。
+加えて、 Angular 側で使用できるように `global.d.ts` に API のインターフェイスを公開する。
