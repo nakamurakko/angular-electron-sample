@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-electron-sample:build:production"
+              "buildTarget": "angular-electron-sample:build:production"
             },
             "development": {
-              "browserTarget": "angular-electron-sample:build:development"
+              "buildTarget": "angular-electron-sample:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-electron-sample:build"
+            "buildTarget": "angular-electron-sample:build"
           }
         },
         "test": {
