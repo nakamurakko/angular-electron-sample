@@ -6,6 +6,7 @@
 import { contextBridge, ipcRenderer } from 'electron';
 
 contextBridge.exposeInMainWorld('GreetingApi', {
+
   /**
    * 挨拶を返す。
    *
@@ -13,4 +14,5 @@ contextBridge.exposeInMainWorld('GreetingApi', {
    * @returns 挨拶。
    */
   greeting: (whoIs: string): Promise<string> => ipcRenderer.invoke('greeting', whoIs).then(value => value as string)
+
 });

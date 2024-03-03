@@ -10,6 +10,7 @@ declare global {
  * GreetingApi 用インターフェイス。
  */
 export interface GreetingApi {
+
   /**
    * 挨拶を返す。
    *
@@ -17,4 +18,5 @@ export interface GreetingApi {
    * @returns 挨拶。
    */
   greeting(whoIs: string): Promise<string>;
+
 }
