@@ -6,7 +6,6 @@ import { GreetingApiService } from './services/greeting-api.service';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   imports: [
     FormsModule,
     RouterOutlet
