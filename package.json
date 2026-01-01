@@ -28,6 +28,8 @@
       "!.github",
       "!.vscode",
       "!angular.json",
+      "!build-dev.bat",
+      "!build-portable.bat",
       "!src",
       "!LICENSE",
       "!README.md",
