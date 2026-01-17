@@ -3,11 +3,9 @@ import { defer, Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class GreetingApiService {
-
-  public constructor() { }
 
   /**
    * 挨拶を返す。
