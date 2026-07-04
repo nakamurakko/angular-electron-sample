@@ -17,11 +17,12 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular/build:application",
           "options": {
-            "main": "src/main.ts",
             "index": "src/index.html",
-            "outputPath": "dist/angular-electron-sample",
+            "outputPath": {
+              "base": "dist/angular-electron-sample"
+            },
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
@@ -31,7 +32,8 @@
             ],
             "styles": [
               "src/styles.css"
-            ]
+            ],
+            "browser": "src/main.ts"
           },
           "configurations": {
             "production": {
