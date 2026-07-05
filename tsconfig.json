@@ -4,9 +4,9 @@
   "compileOnSave": false,
   "compilerOptions": {
     "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
     "isolatedModules": true,
-    "forceConsistentCasingInFileNames": true,
     "module": "es2022",
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
