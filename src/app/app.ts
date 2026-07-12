@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject, model, signal } from '@angular/core';
+import { Component, inject, model, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 
@@ -11,7 +11,6 @@ import { GreetingApiService } from './services/greeting-api.service';
     RouterOutlet
   ],
   templateUrl: './app.html',
-  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './app.css'
 })
 export class App {
