@@ -17,7 +17,7 @@ export class App {
 
   private greetingApiService = inject(GreetingApiService);
 
-  protected readonly title = signal<string>('angular-electron-sample');
+  protected readonly title = signal<string>('angular-electron-sample').asReadonly();
 
   public greetingTo = model<string>('Everyone');
   public greeting = signal<string>('');
